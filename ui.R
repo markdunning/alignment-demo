@@ -20,14 +20,14 @@ shinyUI(fluidPage(
                   "Start Position:",
                   min = 1,
                   max = 50,
-                  value = 30,animate = TRUE)
+                  value = 1,animate = TRUE)
     ),
 
     # Show a plot of the generated distribution
     mainPanel(
-      plotOutput("seqPlot"),
-      plotOutput("refPlot"),
-      plotOutput("matchPlot")
+      plotOutput("seqPlot",height=300),
+      plotOutput("refPlot",height=300),
+      plotOutput("matchPlot",height=100)
     )
   )
 ))
