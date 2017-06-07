@@ -15,7 +15,7 @@ shinyUI(fluidPage(
   # Sidebar with a slider input for number of bins
   sidebarLayout(
     sidebarPanel(
-      selectInput("theSeq", "Your Sequence",choices=c("AGGCT", "TGTTA")),
+      selectInput("theSeq", "Your Sequence",choices=c("AGGCT", "TGTTA","AGGCT","TGGGA","GAGGA","GTGAG")),
       sliderInput("startPos",
                   "Start Position:",
                   min = 1,
